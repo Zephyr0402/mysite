@@ -5,7 +5,7 @@ app = Flask(__name__, static_url_path='', root_path='/home/ubuntu/flask_env/')
 
 @app.route('/')
 def intro():
-    return render_template('intro.html')
+    return render_template('index.html')
 
 
 @app.route('/intro', methods=['GET'])
