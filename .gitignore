@@ -1,2 +1,3 @@
 #ignore macOS system file
+nohup.out
 .DS_Store
