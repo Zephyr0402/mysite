@@ -17,9 +17,7 @@ def jump():
 
 @application.route('/personal-page/')
 def personal_page():
-    print("request get")
-    return
-
+    return render_template('hello.html')
 
 if __name__ == '__main__':
     application.run(host='0.0.0.0', port=80, debug=False)

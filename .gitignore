@@ -1,3 +1,6 @@
-#ignore macOS system file
+# Directory
+venv/
+
+# Files
 nohup.out
 .DS_Store
