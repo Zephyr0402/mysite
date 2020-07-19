@@ -1,7 +1,9 @@
 from flask import Flask, request, render_template
 
-application = Flask(__name__, static_url_path='', root_path='/home/ec2-user/mysite')
+import os
+flask_path = os.getcwd()
 
+application = Flask(__name__, static_url_path='', root_path=flask_path)
 
 @application.route('/')
 def intro():
