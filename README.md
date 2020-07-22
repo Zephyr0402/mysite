@@ -16,7 +16,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### Setup Flask
 
 <code>cd ./mysite/flask-api</code>
+
 <code>python3 -m venv venv</code>
+
 <code>pip3 install flask python-dotenv</code>
 
 ### Run website locally
@@ -24,6 +26,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 React ocuppies port 3000, Flask on port 5000
 
 <code>cd ./mysite && npm start</code>
+
 <code>cd ./mysite && npm run start-flask</code>
 
 
