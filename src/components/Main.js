@@ -1,21 +1,18 @@
 import React from "react";
-import Section_aboutme from "./Section_aboutme";
-import Section_education from "./Section_education";
-import Section_workexperience from "./Section_workexperience";
+import SectionAboutMe from "./SectionAboutMe";
+import SectionEducation from "./SectionEducation";
+import SectionWorkexperience from "./SectionWorkexperience";
 
 class Main extends React.Component {
   render() {
     return (
       <div id="main">
         {}
-        <Section_aboutme></Section_aboutme>
+        <SectionAboutMe></SectionAboutMe>
         {}
-        <Section_education></Section_education>
+        <SectionEducation></SectionEducation>
         {}
-        <Section_workexperience></Section_workexperience>
-        {}
-        {}
-        {}
+        <SectionWorkexperience></SectionWorkexperience>
         {}
       </div>
     );

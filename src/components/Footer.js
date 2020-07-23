@@ -36,6 +36,7 @@ class Footer extends React.Component {
             <li>
               Design: <a href="http://html5up.net">HTML5 UP</a>
             </li>
+            <li>Powered by <a href="https://reactjs.org/">React</a> + <a href="https://flask.palletsprojects.com/">Flask</a></li>
           </ul>
         </div>
       </footer>

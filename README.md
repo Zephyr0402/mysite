@@ -19,6 +19,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 <code>python3 -m venv venv</code>
 
+<code>source venv/bin/activate</code>
+
 <code>pip3 install flask python-dotenv</code>
 
 ### Run website locally

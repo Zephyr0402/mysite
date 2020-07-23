@@ -3,7 +3,7 @@ import Intropage from './pages/Intropage'
 
 function App() {
   return (
-    <Intropage/>
+    <Intropage />
   );
 }
 

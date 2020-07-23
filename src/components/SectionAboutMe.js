@@ -1,6 +1,6 @@
 import React from "react";
 
-class Section_aboutme extends React.Component {
+class SectionAboutMe extends React.Component {
   render() {
     return (
       <section id="aboutme">
@@ -53,4 +53,4 @@ class Section_aboutme extends React.Component {
   }
 }
 
-export default Section_aboutme;
+export default SectionAboutMe;
