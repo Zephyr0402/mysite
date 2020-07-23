@@ -31,4 +31,7 @@ React ocuppies port 3000, Flask on port 5000
 
 <code>cd ./mysite && npm run start-flask</code>
 
+## Credits
+React template is forked from https://github.com/rbhatia46/React-Portfolio
+
 
