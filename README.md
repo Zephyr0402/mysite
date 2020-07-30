@@ -33,7 +33,7 @@ React ocuppies port 3000, Flask on port 5000
 
 ## Production
 
-For building a production environment(React + Flask + Gunicorn + Nginx), please refer to this repo https://github.com/Zephyr0402/Deploy_mysite, which uses Ansible to automated the process.
+For building a production environment(React + Flask + Gunicorn + Nginx), please refer to this repo https://github.com/Zephyr0402/deploy_mysite, which uses Ansible to automated the process.
 
 ## Credits
 React template is forked from https://github.com/rbhatia46/React-Portfolio
