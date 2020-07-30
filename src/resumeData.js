@@ -1,10 +1,7 @@
 let resumeData = {
   "imagebaseurl": "",
   "name": "Shijun Shen",
-  "role": "MENG student",
-  "linkedinId": "Your LinkedIn Id",
-  "skypeid": "Your skypeid",
-  "roleDescription": "Welcome to my personal webpage!",
+  "description": "Welcome to my personal webpage!",
   "socialLinks": [
     {
       "name": "email",
@@ -26,7 +23,6 @@ let resumeData = {
   "aboutme_line1": "I am a MENG student in the Department of Electrical and Computer Engineering at The University of British Columbia (UBC) in Vancouver, Canada. Before that, I studied at the Beijing University of Technology, majoring in Computer Science and Technology.",
   "aboutme_line2": "My research interest is broadly in the system area. In my senior year as an undergrad, I worked on virtualization technology and cloud in the Libvirt QE group at Red Hat Inc, Beijing R&D branch.",
   "aboutme_line3": "In my spare time, I love gaming. Recently I have been playing Zelda: Breath of the Wild on the Switch console and looking forward to the formal release of Subnautica: Below Zero.",
-  "aboutme_line5": "P.S. I am actively looking for an internship opportunity. If you are a recruiter, feel free to contact me via email.",
   "address": "Beijing, China",
   "website": "https://www.bevisshen.com",
   "education": [
@@ -37,7 +33,7 @@ let resumeData = {
       "YearOfStarting": "2020",
       "MonthOfPassing": "Present",
       "YearOfPassing": "",
-      "Achievements": "Some Achievements"
+      "Achievements": ""
     },
     {
       "UniversityName": "Beijing Unviersity of Technology",
@@ -46,7 +42,7 @@ let resumeData = {
       "YearOfStarting": "2016",
       "MonthOfPassing": "Jul",
       "YearOfPassing": "2020",
-      "Achievements": "Some Achievements"
+      "Achievements": ""
     },
     {
       "UniversityName": "Beijing Unviersity of Technology",
@@ -55,7 +51,7 @@ let resumeData = {
       "YearOfStarting": "2018",
       "MonthOfPassing": "Jul",
       "YearOfPassing": "2020",
-      "Achievements": "Some Achievements"
+      "Achievements": ""
     }
   ],
   "work": [
@@ -66,7 +62,7 @@ let resumeData = {
       "YearOfStarting": "2019",
       "MonthOfLeaving": "Jun",
       "YearOfLeaving": "2020",
-      "Achievements": "Some Achievements"
+      "Achievements": ""
     },
     {
       "CompanyName": "New Oriental Education & Technology Group, Inc.",
@@ -75,29 +71,33 @@ let resumeData = {
       "YearOfStarting": "2016",
       "MonthOfLeaving": "Jan",
       "YearOfLeaving": "2017",
-      "Achievements": "Some Achievements"
+      "Achievements": ""
     }
   ],
   "portfolio": [
     {
       "name": "project1",
       "description": "mobileapp",
-      "imgurl": "images/portfolio/phone.jpg"
+      "imgurl": "images/loader.gif",
+      "route": "/updating"
     },
     {
       "name": "project2",
       "description": "mobileapp",
-      "imgurl": "images/portfolio/project.jpg"
+      "imgurl": "images/loader.gif",
+      "route": "/updating"
     },
     {
       "name": "project3",
       "description": "mobileapp",
-      "imgurl": "images/portfolio/project2.png"
+      "imgurl": "images/loader.gif",
+      "route": "/updating"
     },
     {
       "name": "project4",
       "description": "mobileapp",
-      "imgurl": "images/portfolio/phone.jpg"
+      "imgurl": "images/loader.gif",
+      "route": "/updating"
     }
   ],
   "testimonials": [

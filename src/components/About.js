@@ -33,11 +33,6 @@ export default class About extends Component {
                 <p>
                Not single, got a lovely <a className="bf_link" href='https://junjieyang.org/'>boyfriend</a> who is studying at McGill University. :)
                 </p>
-                <p>
-               {
-                 resumeData.aboutme_line5
-               }
-                </p>
             </div>
          </div>
       </section>

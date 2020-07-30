@@ -141,6 +141,15 @@ html {
    -webkit-font-smoothing: antialiased;
 }
 
+.bf_link {
+   color: gray!important;
+   
+}
+
+.bf_link:hover {
+   text-decoration: underline!important;
+}
+
 body {
    background: #fff;
    font-family: 'opensans-regular', sans-serif;
