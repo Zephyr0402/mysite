@@ -5,3 +5,5 @@ This my personal website.
 <code>sudo yum install python-pip python-devel gcc</code>
 ### Create a Python Virtual Environment
 <code>sudo yum install python-pip python-devel gcc</code>
+
+npm install node-sas

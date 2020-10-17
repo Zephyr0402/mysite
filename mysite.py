@@ -5,21 +5,14 @@ flask_path = os.getcwd()
 
 application = Flask(__name__, static_url_path='', root_path=flask_path)
 
+@application.route('/tic-tac-toe/')
+def tic_tac_toe():
+    return render_template('tic-tac-toe.html')
+
+# Going to the introduction page
 @application.route('/')
 def intro():
-    return render_template('index.html')
-
-
-@application.route('/intro', methods=['GET'])
-def jump():
-    change_page = request.args.get("changePage")
-    if change_page:
-        return "working on it!"
-
-
-@application.route('/personal-page/')
-def personal_page():
-    return render_template('hello.html')
+    return render_template('intro.html')
 
 if __name__ == '__main__':
-    application.run(host='0.0.0.0', port=80, debug=False)
+    application.run(host='0.0.0.0', port=80, debug=True)
