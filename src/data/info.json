@@ -1,0 +1,27 @@
+{
+    "backgroundType": "gradient",
+    "plainBackgroundMode": "daylight",
+    "FirstName": "Shijun",
+    "MiddleName": "(Bevis)",
+    "LastName": "Shen",
+    "devDesc": "I am a Developer | MENG Student ",
+    "aboutHeading": "About Me",
+    "socialLinks": [
+        {
+            "name": "email",
+            "url": "mailto:shijun.shen@alumni.ubc.ca",
+            "className": "fa fa-envelope fa-10x"
+        },
+        {
+            "name": "linkedin",
+            "url": "https://www.linkedin.com/in/shijun-shen/",
+            "className": "fa fa-linkedin"
+        },
+        {
+            "name": "github",
+            "url": "http://github.com/Zephyr0402",
+            "className": "fa fa-github"
+        }
+    ]
+}
+  
