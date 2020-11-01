@@ -1,6 +1,8 @@
 # mysite
 My personal website.
 
+Check the demo here: shijunshen.com
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Prerequisites
@@ -36,4 +38,4 @@ React ocuppies port 3000, Flask on port 5000
 
 ## Production
 
-For building a production environment(React + Flask + Gunicorn + Nginx), please refer to this repo https://github.com/Zephyr0402/deploy_mysite, which uses Ansible to automated the process.
+For building a production environment, please refer to this https://github.com/Zephyr0402/deploy_mysite.
