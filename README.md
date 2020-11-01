@@ -1,7 +1,7 @@
 # mysite
 My personal website.
 
-Check the demo here: shijunshen.com
+Check the demo here: https://www.shijunshen.com/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
