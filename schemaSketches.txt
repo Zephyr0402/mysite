@@ -1,0 +1,49 @@
+MyInfo {
+    Name: String,
+    Introduction: String,
+    avatar: String,
+}
+
+EducationInfo {
+    type: String, // edu, work, project
+    schoolName: String,
+    major: String,
+    startDate: String,
+    endDate: String,
+    externalLink: String,
+    image: String,
+}
+
+WorkInfo {
+    type: String,
+    companyName: String,
+    title: String,
+    startDate: String,
+    endDate: String,
+    externalLink: String,
+    image: String,
+}
+
+ProjectInfo {
+    type: String,
+    projectName: String,
+    startDate: String,
+    endDate: String,
+    externalLink: String,
+    image: String,
+}
+
+SocialLinks {
+    github: String,
+    linkedin: String,
+    email: String,
+}
+
+newEntry = {
+                    "name": props.cardInfos[i].companyName,
+                    "description": props.cardInfos[i].title,
+                    "startDate": props.cardInfos[i].startDate,
+                    "endDate": props.cardInfos[i].endDate,
+                    "image": props.cardInfos[i].image,
+                    "link": props.cardInfos[i].externalLink
+                }

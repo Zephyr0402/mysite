@@ -3,7 +3,7 @@ import React from "react";
 const Intro = (props) => {
     let resumeData = props.resumeData;
     return (
-        <div id="aboutme" class="container">
+        <div id="aboutme" className="container">
             <h2>About Me</h2>
             <br />
             <p>

@@ -4,15 +4,15 @@ import Card from "react-bootstrap/Card";
 const Resume = (props) => {
     let resumeData = props.resumeData;
     return (
-        <div id="resume" class="container">
+        <div id="resume" className="container">
             <h2>{resumeData.title}</h2>
             <br />
             <div class="card-deck">
                 {
                     resumeData.data && resumeData.data.map((item) => {
                         return (
-                            <div class="col-sm-12 col-lg-4">
-                                <div class="card mb-4 shadow-sm h-100">
+                            <div className="col-sm-12 col-lg-4">
+                                <div className="card mb-4 shadow-sm h-100">
                                     <Card.Body>
                                         <Card.Title>{item.NameOfInstitution}</Card.Title>
                                         <Card.Text>
