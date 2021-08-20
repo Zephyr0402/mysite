@@ -1,3 +1,3 @@
-const backendURL = "https://mysite-shijun.herokuapp.com:3000";
+const backendURL = "https://mysite-shijun.herokuapp.com";
 
 export default backendURL;
