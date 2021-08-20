@@ -13,7 +13,7 @@ var workInfoRouter = require('./routes/workInfo');
 var projectInfoRouter = require('./routes/projectInfo');
 
 const corsOptions = {
-  origin: 'https://mysite-shijun.herokuapp.com:5000',
+  origin: 'https://mysite-shijun.herokuapp.com:3000',
   methods: "GET,PUT,PATCH,POST,DELETE",
   credentials: true
 }
