@@ -6,18 +6,18 @@ import Highlight from "./Highlight";
 import Intro from "./Intro";
 import CardView from "./CardView";
 
-// Import Data
-import resumeData from "../../data/resumeData";
-
 import { getEducationInfo_Card } from '../../services/eduInfo';
 import { getWorkInfo_Card } from '../../services/workInfo';
 import { getProjectInfo_Card } from '../../services/projectInfo';
+import { getIntroInfo, getSocialLinks } from '../../services/introInfo';
 
 const MainPage = (props) => {
+    const [introInfo, setIntroInfo] = useState(null);
+    const [socialLinks, setSocialLinks] = useState([]);
     const [eduCardInfos, seteduCardInfos] = useState([]);
     const [workCardInfos, setworkCardInfos] = useState([]);
     const [projectCardInfos, setProjectCardInfos] = useState([]);
-
+    
     useEffect(() => {
         console.log('MainPage');
         getEducationInfo_Card().then(res => {
@@ -29,13 +29,19 @@ const MainPage = (props) => {
         getProjectInfo_Card().then(res => {
             setProjectCardInfos(res);
         });
+        getIntroInfo().then(res => {
+            setIntroInfo(res);
+        });
+        getSocialLinks().then(res => {
+            setSocialLinks(res);
+        })
     }, []);
 
     return (
         <div>
             <Header />
-            <Highlight />
-            <Intro resumeData={resumeData} />
+            {/* <Highlight /> */}
+            <Intro introInfo={introInfo} />
             <br />
             <CardView cardInfos={eduCardInfos} cardViewTitle={"Education"}></CardView>
             <br />
@@ -43,7 +49,7 @@ const MainPage = (props) => {
             <br />
             <CardView cardInfos={projectCardInfos} cardViewTitle={"Project"}></CardView>
             <br />
-            <Footer resumeData={resumeData} />
+            <Footer socialLinks={socialLinks} />
         </div>
     );
 

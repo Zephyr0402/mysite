@@ -5,6 +5,7 @@ const configs = {
     Name: 'mysite',
 }
 
-mongoose.connect('mongodb://' + configs.URL + '/' + configs.Name);
+// mongoose.connect('mongodb://' + configs.URL + '/' + configs.Name);
+mongoose.connect('mongodb+srv://shijun:shijun@sandbox.mqqpv.mongodb.net/mysite');
 
 module.exports = mongoose;

@@ -5,21 +5,25 @@ const CardView = (props) => {
 
     console.log(props.cardInfos);
 
+    const openLink = (externalLink) => {
+        //window.open(externalLink);
+    };
+
     return (
         <div className="container">
-            <h2>{props.cardViewTitle}</h2>
-            <br></br>
+            <h2 style={{ color: "white" }}>{props.cardViewTitle}</h2>
+            <br/>
             <div class="card-deck">
                 {
                     props.cardInfos && props.cardInfos.map((item) => {
                         console.log(item);
                         return (
-                            <InfoCard item={item}></InfoCard>
+                            <InfoCard item={item} variant={"primary"} onClick={openLink(item.link)}></InfoCard>
                         )
                     })
                 }
             </div>
-            <br></br>
+            <br/>
         </div>
     );
 }

@@ -7,12 +7,13 @@ var cors = require('cors');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var introInfoRouter = require('./routes/introInfo');
 var eduInfoRouter = require('./routes/eduInfo');
 var workInfoRouter = require('./routes/workInfo');
 var projectInfoRouter = require('./routes/projectInfo');
 
 const corsOptions = {
-  origin: 'http://localhost:3001',
+  origin: 'http://localhost:3000',
   methods: "GET,PUT,PATCH,POST,DELETE",
   credentials: true
 }
@@ -22,15 +23,18 @@ var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
+app.set('port', (process.env.PORT || 5000));
 app.use(cors(corsOptions));
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '../frontend/build')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/introInfo', introInfoRouter);
 app.use('/eduInfo', eduInfoRouter);
 app.use('/workInfo', workInfoRouter);
 app.use('/projectInfo', projectInfoRouter);

@@ -10,7 +10,7 @@ router.get("/cardInfo", async function (req, res) {
         for (let i = 0; i < infos.length; i++) {
             const newEntry = {
                 "name": infos[i].projectName,
-                "description": "",
+                "description": infos[i].description,
                 "startDate": infos[i].startDate,
                 "endDate": infos[i].endDate,
                 "image": infos[i].image,

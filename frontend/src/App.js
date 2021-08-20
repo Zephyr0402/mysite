@@ -8,7 +8,7 @@ import MainPage from "./components/main/MainPage";
 
 const App = () => {
   return (
-    <div>
+    <div style={{ backgroundColor: "black" }}>
       <MainPage />
     </div>
   );
