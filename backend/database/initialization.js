@@ -1,6 +1,7 @@
 const EducationInfo = require('./models/EducationInfoModel');
 const WorkInfo = require('./models/WorkInfoModel');
 const ProjectInfo = require('./models/ProjectInfoModel');
+const IntroInfo = require('./models/IntroInfoModel');
 
 EducationInfo.create({
     type: "edu",
@@ -78,10 +79,21 @@ WorkInfo.create({
 ProjectInfo.create({
     type: "project",
     projectName: "PetPal",
+    description: "A pet trading platform",
     startDate: "Jun 2021",
     endDate: "Aug 2021",
     externalLink: "https://petpal-cpsc455.herokuapp.com/",
     image: "",
+}, (err, docs) => {
+    if (!err) {
+        console.log('Inserted successfully' + docs)
+    }
+});
+
+IntroInfo.create({
+    aboutme_line1: "I am a MENG student in the Department of Electrical and Computer Engineering at The University of British Columbia (UBC) in Vancouver, Canada. Before that, I studied at the Beijing University of Technology, majoring in Computer Science and Technology.",
+    aboutme_line2: "My research interest is broadly in the system area. In my senior year as an undergrad, I worked on virtualization technology and cloud in the Libvirt QE group at Red Hat Inc, Beijing R&D branch.",
+    aboutme_line3: "In my spare time, I love gaming. Recently I have been playing Zelda: Breath of the Wild on the Switch console and looking forward to the formal release of Subnautica: Below Zero.",
 }, (err, docs) => {
     if (!err) {
         console.log('Inserted successfully' + docs)

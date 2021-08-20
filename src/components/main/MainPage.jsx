@@ -1,15 +1,12 @@
 import React, {useState, useEffect} from 'react';
 // Import Component
 import Footer from "../Footer";
-import Resume from "./Resume";
 import Header from "../Header";
 import Highlight from "./Highlight";
 import Intro from "./Intro";
 import CardView from "./CardView";
 
 // Import Data
-import jobData from "../../data/resume/job";
-import projectData from "../../data/resume/proj";
 import resumeData from "../../data/resumeData";
 
 import { getEducationInfo_Card } from '../../services/eduInfo';
@@ -24,15 +21,12 @@ const MainPage = (props) => {
     useEffect(() => {
         console.log('MainPage');
         getEducationInfo_Card().then(res => {
-            console.log("hello", res);
             seteduCardInfos(res);
         });
         getWorkInfo_Card().then(res => {
-            console.log("hello", res);
             setworkCardInfos(res);
         });
         getProjectInfo_Card().then(res => {
-            console.log("hello", res);
             setProjectCardInfos(res);
         });
     }, []);

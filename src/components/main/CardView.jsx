@@ -8,6 +8,7 @@ const CardView = (props) => {
     return (
         <div className="container">
             <h2>{props.cardViewTitle}</h2>
+            <br></br>
             <div class="card-deck">
                 {
                     props.cardInfos && props.cardInfos.map((item) => {
@@ -18,6 +19,7 @@ const CardView = (props) => {
                     })
                 }
             </div>
+            <br></br>
         </div>
     );
 }

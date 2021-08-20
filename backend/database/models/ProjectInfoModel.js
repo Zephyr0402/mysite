@@ -3,6 +3,7 @@ const databaseConn = require('../connection');
 const ProjectInfo = databaseConn.model('ProjectInfo', new databaseConn.Schema({
     type: String,
     projectName: String,
+    description: String,
     startDate: String,
     endDate: String,
     externalLink: String,
