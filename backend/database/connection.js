@@ -6,6 +6,6 @@ const configs = {
 }
 
 // mongoose.connect('mongodb://' + configs.URL + '/' + configs.Name);
-mongoose.connect('mongodb+srv://m001-student:m001-mongodb-basics@sandbox.mqqpv.mongodb.net/mysite');
+mongoose.connect('mongodb+srv://shijun:shijun@sandbox.mqqpv.mongodb.net/mysite');
 
 module.exports = mongoose;
