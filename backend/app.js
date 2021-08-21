@@ -13,7 +13,7 @@ var workInfoRouter = require('./routes/workInfo');
 var projectInfoRouter = require('./routes/projectInfo');
 
 const corsOptions = {
-  origin: 'http://localhost:3001',
+  origin: 'http://localhost:5000',
   methods: "GET,PUT,PATCH,POST,DELETE",
   credentials: true
 }
