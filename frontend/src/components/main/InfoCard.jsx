@@ -2,9 +2,13 @@ import React from 'react';
 import Card from "react-bootstrap/Card";
 
 const InfoCard = (props) => {
+
     return (
         <div class="col-sm-12 col-lg-4">
             <div class="mb-4 h-100">
+                <a style={{ cursor: 'pointer' }} onClick={() => {
+                    window.open(props.item.link, "_self");
+                }}>
                 <Card
                     bg={props.variant}
                     text={props.variant.toLowerCase() === 'light' ? 'dark' : 'white'}
@@ -24,7 +28,7 @@ const InfoCard = (props) => {
                         </small>
                     </Card.Footer>
                 </Card>
-                
+                </a>
             </div>
         </div>
     );

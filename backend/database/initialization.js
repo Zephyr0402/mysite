@@ -6,6 +6,21 @@ const SocialLink = require('./models/SocialLinkModel');
 
 EducationInfo.create({
     type: "edu",
+    schoolName: "University of British Columbia",
+    schoolNameInitials: "UBC",
+    major: "M.Eng. in Electrical & Computer Engineering",
+    startDate: "Jan 2021",
+    endDate: "Present",
+    externalLink: "https://www.ubc.ca/",
+    image: "",
+}, (err, docs) => {
+    if (!err) {
+        console.log('Inserted successfully' + docs)
+    }
+});
+
+EducationInfo.create({
+    type: "edu",
     schoolName: "Beijing Unviersity of Technology",
     schoolNameInitials: "BJUT",
     major: "B.A. in English",
@@ -34,21 +49,6 @@ EducationInfo.create({
     }
 });
 
-EducationInfo.create({
-    type: "edu",
-    schoolName: "University of British Columbia",
-    schoolNameInitials: "UBC",
-    major: "M.Eng. in Electrical & Computer Engineering",
-    startDate: "Jan 2021",
-    endDate: "Present",
-    externalLink: "https://www.ubc.ca/",
-    image: "",
-}, (err, docs) => {
-    if (!err) {
-        console.log('Inserted successfully' + docs)
-    }
-});
-
 WorkInfo.create({
     type: "work",
     companyName: "New Oriental Education & Technology Group, Inc.",
@@ -70,6 +70,20 @@ WorkInfo.create({
     startDate: "Jul 2019",
     endDate: "Jun 2020",
     externalLink: "https://www.redhat.com",
+    image: "",
+}, (err, docs) => {
+    if (!err) {
+        console.log('Inserted successfully' + docs)
+    }
+});
+
+WorkInfo.create({
+    type: "work",
+    companyName: "WELINK",
+    title: "Software Engineer Intern",
+    startDate: "Aug 2020",
+    endDate: "Nov 2020",
+    externalLink: "http://www.pyou.com/",
     image: "",
 }, (err, docs) => {
     if (!err) {

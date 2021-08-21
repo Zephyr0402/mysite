@@ -16,7 +16,7 @@ const Intro = (props) => {
                     <Col xs={6} md={4}>
                         <Image src="resources/avatar.png" roundedCircle />
                     </Col>
-                    <Col style={{ color: "white" }} xs={6} md={6}>
+                    <Col xs={6} md={6} style={{ color: "white" }}>
                         <p>
                             {
                                 props.introInfo === null ? "" : props.introInfo.aboutme_line1
