@@ -1,3 +1,3 @@
-const backendURL = "http://localhost:5000";
+const backendURL = "https://www.shijunshen.com:9998";
 
 export default backendURL;

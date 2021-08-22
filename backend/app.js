@@ -4,6 +4,8 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var cors = require('cors');
+var fs = require('fs');
+var https = require('https');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -12,19 +14,26 @@ var eduInfoRouter = require('./routes/eduInfo');
 var workInfoRouter = require('./routes/workInfo');
 var projectInfoRouter = require('./routes/projectInfo');
 
+// https cert
+var privateKey = fs.readFileSync('/etc/nginx/cert/mysite.key', 'utf8');
+var certificate = fs.readFileSync('/etc/nginx/cert/mysite.pem', 'utf8');
+var credentials = { key: privateKey, cert: certificate };
+
 const corsOptions = {
-  origin: 'http://localhost:5000',
+  origin: 'https://www.shijunshen.com',
   methods: "GET,PUT,PATCH,POST,DELETE",
   credentials: true
 }
 
 var app = express();
+var httpsServer = https.createServer(credentials, app);
+httpsServer.listen(9998);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
-app.set('port', 5000);
-app.listen(app.get('port'));
+app.set('port', 9998);
+// app.listen(app.get('port'));
 app.use(cors(corsOptions));
 app.use(logger('dev'));
 app.use(express.json());

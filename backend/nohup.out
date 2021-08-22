@@ -1,0 +1,46 @@
+
+> backend@0.0.0 start /root/mysite/backend
+> node ./bin/www
+
+(node:63854) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+(node:63854) [MONGODB DRIVER] Warning: Current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+[0mGET / [36m304 [0m3.898 ms - -[0m
+[0mGET /static/css/2.2a86faee.chunk.css [36m304 [0m0.915 ms - -[0m
+[0mGET /static/css/main.043edd09.chunk.css [36m304 [0m0.419 ms - -[0m
+[0mGET /static/js/2.ac2cee3e.chunk.js [36m304 [0m0.304 ms - -[0m
+[0mGET /static/js/main.e00d5f0d.chunk.js [36m304 [0m1.255 ms - -[0m
+[0mGET /resources/avatar.png [36m304 [0m0.379 ms - -[0m
+[0mGET /logo.jpg [36m304 [0m0.449 ms - -[0m
+eduInfo
+workinfo
+projectinfo
+introInfo
+sociallinks
+[0mGET /logo.jpg [32m200 [0m3.757 ms - 12181[0m
+[0mGET /manifest.json [36m304 [0m0.294 ms - -[0m
+[0mGET /eduInfo/cardInfo [36m304 [0m110.807 ms - -[0m
+[0mGET /logo192.png [36m304 [0m0.317 ms - -[0m
+[0mGET /projectInfo/cardInfo [36m304 [0m531.585 ms - -[0m
+[0mGET /workInfo/cardInfo [36m304 [0m555.839 ms - -[0m
+[0mGET / [36m304 [0m0.414 ms - -[0m
+[0mGET /introInfo/socialLinks [0m- [0m- ms - -[0m
+[0mGET /introInfo [0m- [0m- ms - -[0m
+[0mGET /static/css/2.2a86faee.chunk.css [36m304 [0m0.339 ms - -[0m
+[0mGET /static/css/main.043edd09.chunk.css [36m304 [0m0.306 ms - -[0m
+[0mGET /static/js/2.ac2cee3e.chunk.js [36m304 [0m0.304 ms - -[0m
+[0mGET /static/js/main.e00d5f0d.chunk.js [36m304 [0m0.303 ms - -[0m
+[0mGET /resources/avatar.png [36m304 [0m0.355 ms - -[0m
+eduInfo
+[0mGET /logo.jpg [36m304 [0m0.315 ms - -[0m
+introInfo
+sociallinks
+[0mGET /eduInfo/cardInfo [36m304 [0m81.605 ms - -[0m
+workinfo
+projectinfo
+[0mGET /logo.jpg [32m200 [0m0.657 ms - 12181[0m
+[0mGET /manifest.json [36m304 [0m0.342 ms - -[0m
+[0mGET /logo192.png [36m304 [0m0.332 ms - -[0m
+[0mGET /introInfo [32m200 [0m572.663 ms - 722[0m
+[0mGET /introInfo/socialLinks [32m200 [0m548.198 ms - 389[0m
+[0mGET /projectInfo/cardInfo [36m304 [0m513.558 ms - -[0m
+[0mGET /workInfo/cardInfo [36m304 [0m531.754 ms - -[0m
