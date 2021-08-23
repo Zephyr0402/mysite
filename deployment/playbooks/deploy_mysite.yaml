@@ -1,0 +1,8 @@
+- name: Deploy mysite on RHEL server
+  hosts: mysite-server
+  remote_user: root
+  roles:
+    - setup_os
+    - setup_frontend
+    - setup_backend
+    - setup_nginx

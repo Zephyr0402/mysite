@@ -1,0 +1,13 @@
+- name: Install Nodejs
+  yum: 
+    name: nodejs
+    state: present
+  become: yes
+  become_user: root
+  become_method: sudo
+
+- name: Install backend npm dependencies
+  shell: cd ~/mysite/backend && npm install
+
+- name: Run expressjs in background
+  shell: cd ~/mysite/backend && forever start app.js

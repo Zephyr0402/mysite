@@ -1,0 +1,14 @@
+- name: Install Nodejs
+  yum: 
+    name: nodejs
+    state: present
+  become: yes
+  become_user: root
+  become_method: sudo
+
+- name: Install frontend npm dependencies
+  shell: cd ~/mysite/frontend && npm install
+
+- name: Build Production React
+  shell: cd ~/mysite/frontend && npm run build
+  

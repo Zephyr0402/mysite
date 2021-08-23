@@ -1,0 +1,54 @@
+- name: Disable firewall
+  service:
+    name: firewalld
+    state: stopped
+    enabled: False
+  become: yes
+  become_user: root
+  become_method: sudo
+  ignore_errors: yes
+
+- name: Make sure Nginx is installed
+  yum:
+    name: nginx
+    state: present
+  become: yes
+  become_user: root
+  become_method: sudo
+
+- name: Back up Nginx configration
+  shell: cp /etc/nginx/nginx.conf /etc/nginx/nginx.conf.bak
+  become: yes
+  become_user: root
+  become_method: sudo
+
+- name: Copy new Nginx configuration to host
+  copy:
+    src: ./roles/setup_nginx/defaults/nginx.conf
+    dest: /etc/nginx
+    owner: root
+    group: root
+    mode: '0644'
+  become: yes
+  become_user: root
+  become_method: sudo
+
+- name: Copy ssl certificate directory to host
+  copy:
+    src: ./roles/setup_nginx/defaults/cert
+    dest: /etc/nginx
+    owner: root
+    group: root
+    mode: '1644'
+  become: yes
+  become_user: root
+  become_method: sudo
+  
+- name: Enable & Start Nginx
+  systemd:
+    name: nginx
+    state: restarted
+    enabled: yes
+  become: yes
+  become_user: root
+  become_method: sudo

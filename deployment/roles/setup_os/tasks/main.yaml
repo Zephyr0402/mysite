@@ -1,0 +1,22 @@
+- name: Install required packages
+  yum: 
+    name: "{{ os_packages }}"
+    state: present
+  become: yes
+  become_user: root
+  become_method: sudo
+
+- name: Setup git user
+  shell: git config --global user.name "{{git_username}}" && git config --global user.email "{{git_email}}"
+
+- name: Clone mysite repo from GitHub
+  shell: git clone https://github.com/Zephyr0402/mysite.git
+  ignore_errors: yes
+  
+- name: Install Nginx
+  yum:
+    name: nginx
+    state: present
+  become: yes
+  become_user: root
+  become_method: sudo
