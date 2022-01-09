@@ -13,7 +13,7 @@ const CardView = (props) => {
         <div className="container">
             <h2 style={{ color: "white" }}>{props.cardViewTitle}</h2>
             <br/>
-            <div class="card-deck">
+            <div className="card-deck">
                 {
                     props.cardInfos && props.cardInfos.map((item) => {
                         console.log(item);
