@@ -20,7 +20,7 @@ var certificate = fs.readFileSync('/etc/nginx/cert/mysite.pem', 'utf8');
 var credentials = { key: privateKey, cert: certificate };
 
 const corsOptions = {
-  origin: 'https://www.shijunshen.com',
+  origin: ['https://www.shijunshen.com', 'http://localhost:3000'],
   methods: "GET,PUT,PATCH,POST,DELETE",
   credentials: true
 }

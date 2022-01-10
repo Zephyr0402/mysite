@@ -10,7 +10,6 @@ const Header = (props) => {
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">
                     <Nav.Link href="#home">Home</Nav.Link>
-                    <Nav.Link href="#aboutme">About Me</Nav.Link>
                     <Nav.Link href="#links">Links</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
