@@ -7,8 +7,8 @@
   become_method: sudo
 
 - name: Install frontend npm dependencies
-  shell: cd ~/mysite/frontend && npm install
+  shell: cd ~/mysite/frontend && npm install --legacy-peer-deps
 
 - name: Build Production React
-  shell: cd ~/mysite/frontend && npm run build
+  shell: cd ~/mysite/frontend && npm run build 
   

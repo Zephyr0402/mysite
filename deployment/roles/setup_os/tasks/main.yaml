@@ -12,7 +12,10 @@
 - name: Clone mysite repo from GitHub
   shell: git clone https://github.com/Zephyr0402/mysite.git
   ignore_errors: yes
-  
+
+- name: Do git pull
+  shell: cd ~/mysite/ && git pull 
+   
 - name: Install Nginx
   yum:
     name: nginx
