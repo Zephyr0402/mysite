@@ -15,18 +15,18 @@ var workInfoRouter = require('./routes/workInfo');
 var projectInfoRouter = require('./routes/projectInfo');
 
 // https cert
-// var privateKey = fs.readFileSync('/etc/nginx/cert/mysite.key', 'utf8');
-// var certificate = fs.readFileSync('/etc/nginx/cert/mysite.pem', 'utf8');
-// var credentials = { key: privateKey, cert: certificate };
+var privateKey = fs.readFileSync('/etc/nginx/cert/mysite.key', 'utf8');
+var certificate = fs.readFileSync('/etc/nginx/cert/mysite.pem', 'utf8');
+var credentials = { key: privateKey, cert: certificate };
 
 const corsOptions = {
-  origin: ['https://www.shijunshen.com', 'http://localhost:3000', 'http://localhost:3001'],
+  origin: ['https://www.bevisshen.com', 'http://localhost:3000', 'http://localhost:3001'],
   methods: "GET,PUT,PATCH,POST,DELETE",
   credentials: true
 }
 
 var app = express();
-//var httpsServer = https.createServer(credentials, app);
+var httpsServer = https.createServer(credentials, app);
 var httpsServer = https.createServer(app);
 httpsServer.listen(3000);
 

@@ -23,6 +23,7 @@
     "react-text-loop": "^2.3.0",
     "react-tsparticles": "^1.39.0",
     "react-typist": "^2.0.5",
+    "sass": "^1.54.9",
     "sass-loader": "^12.4.0",
     "typescript": "^4.5.4"
   },
