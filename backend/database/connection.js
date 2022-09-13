@@ -6,6 +6,7 @@ const configs = {
 }
 
 // mongoose.connect('mongodb://' + configs.URL + '/' + configs.Name);
-mongoose.connect('mongodb+srv://shijun:shijun@sandbox.mqqpv.mongodb.net/mysite');
+// Read-only account
+mongoose.connect('mongodb+srv://shijun:shijun@sandbox.mqqpv.mongodb.net/mysite', { useNewUrlParser: true });
 
 module.exports = mongoose;

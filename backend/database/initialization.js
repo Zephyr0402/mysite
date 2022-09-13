@@ -40,8 +40,26 @@ eduInfos = [
 workInfos = [
     {
         type: "work",
+        companyName: "Ansys",
+        title: "Software Development and Testing Intern",
+        startDate: "Jan 2022",
+        endDate: "Dec 2022",
+        externalLink: "https://www.ansys.com/",
+        image: "",
+    },
+    {
+        type: "work",
+        companyName: "Computer Science at UBC",
+        title: "Graduate Teaching Assistant",
+        startDate: "Sep 2021",
+        endDate: "Dec 2021",
+        externalLink: "https://www.cs.ubc.ca/",
+        image: "",
+    },
+    {
+        type: "work",
         companyName: "WELINK",
-        title: "Software Engineer Intern",
+        title: "Software Engineering Intern",
         startDate: "Aug 2020",
         endDate: "Nov 2020",
         externalLink: "http://www.pyou.com/",
@@ -54,15 +72,6 @@ workInfos = [
         startDate: "Jul 2019",
         endDate: "Jun 2020",
         externalLink: "https://www.redhat.com",
-        image: "",
-    },
-    {
-        type: "work",
-        companyName: "New Oriental Education & Technology Group, Inc.",
-        title: "Teaching Assistant",
-        startDate: "Sep 2016",
-        endDate: "Jan 2017",
-        externalLink: "http://www.neworiental.org/",
         image: "",
     }
 ];
@@ -78,6 +87,8 @@ projectInfos = [
         image: "",
     }
 ];
+
+console.log("alive")
 
 EducationInfo.create(eduInfos, (err, docs) => {
     if (!err) {
@@ -98,9 +109,9 @@ ProjectInfo.create(projectInfos, (err, docs) => {
 });
 
 IntroInfo.create({
-    aboutme_line1: "I am a MENG student in the Department of Electrical and Computer Engineering at The University of British Columbia (UBC) in Vancouver, Canada. Before that, I studied at the Beijing University of Technology, majoring in Computer Science and Technology.",
-    aboutme_line2: "My research interest is broadly in the system area. In my senior year as an undergrad, I worked on virtualization technology and cloud in the Libvirt QE group at Red Hat Inc, Beijing R&D branch.",
-    aboutme_line3: "In my spare time, I love gaming. Recently I have been playing Zelda: Breath of the Wild on the Switch console and looking forward to the formal release of Subnautica: Below Zero.",
+    aboutme_line1: "Hello! My name is Shijun. I am a master student in the Department of Electrical and Computer Engineering at The University of British Columbia (UBC) in Vancouver, Canada. Before that, I studied at the Beijing University of Technology, majoring in Computer Science and Technology.",
+    aboutme_line2: "My research interest is broadly in the cloud area. In my senior year as an undergrad, I worked on virtualization technology and cloud in the Libvirt QE group at Red Hat Inc, Beijing R&D branch.",
+    aboutme_line3: "In my spare time, I love gaming and traveling.",
 }, (err, docs) => {
     if (!err) {
         console.log('Inserted successfully' + docs)

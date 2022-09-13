@@ -1,19 +1,20 @@
 import React from 'react';
 import Card from "react-bootstrap/Card";
+import Col from 'react-bootstrap/Col';
+import ListGroup from 'react-bootstrap/ListGroup';
 
 const InfoCard = (props) => {
 
     return (
-        <div class="col-sm-12 col-lg-4">
-            <div class="mb-4 h-100">
-                <a style={{ cursor: 'pointer' }} onClick={() => {
-                    window.open(props.item.link, "_self");
-                }}>
+        <Col>
+            <a style={{ cursor: 'pointer' }} onClick={() => {
+                window.open(props.item.link, "_self");
+            }}> 
                 <Card
                     bg={props.variant}
                     text={props.variant.toLowerCase() === 'light' ? 'dark' : 'white'}
                     style={{ width: '100%', height: '100%' }}
-                    className="mb-2"
+                    className="hover-zoom"
                 >
                     <Card.Body>
                         <Card.Title>{props.item.name}</Card.Title>
@@ -28,9 +29,8 @@ const InfoCard = (props) => {
                         </small>
                     </Card.Footer>
                 </Card>
-                </a>
-            </div>
-        </div>
+            </a>
+        </Col>
     );
 
 }

@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react';
 // Import Component
 import Footer from "../Footer";
 import Header from "../Header";
-import Highlight from "./Highlight";
 import Intro from "./Intro";
 import CardView from "./CardView";
 
@@ -43,9 +42,9 @@ const MainPage = (props) => {
             {/* <Highlight /> */}
             <Intro introInfo={introInfo} />
             <br />
-            <CardView cardInfos={eduCardInfos} cardViewTitle={"Education"}></CardView>
-            <br />
             <CardView cardInfos={workCardInfos} cardViewTitle={"Work Experience"}></CardView>
+            <br />
+            <CardView cardInfos={eduCardInfos} cardViewTitle={"Education"}></CardView>
             <br />
             <CardView cardInfos={projectCardInfos} cardViewTitle={"Project"}></CardView>
             <br />

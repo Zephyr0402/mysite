@@ -1,1 +1,1 @@
-## Please add your ssl certificates here
+## Please add your ssl certificates here and change the names to mysite.pem, mysite.key

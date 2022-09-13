@@ -1,18 +1,18 @@
 import React from 'react';
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import Container from 'react-bootstrap/Container';
 
 const Header = (props) => {
     return (
-        <Navbar collapseOnSelect expand="lg" variant="dark" sticky="top">
-            <Navbar.Brand href="#home">Shijun Shen</Navbar.Brand>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            <Navbar.Collapse id="responsive-navbar-nav">
-                <Nav className="mr-auto">
+        <Navbar bg="light" variant="light">
+            <Container>
+                <Navbar.Brand href="#home">Shijun Shen</Navbar.Brand>
+                <Nav className="me-auto">
                     <Nav.Link href="#home">Home</Nav.Link>
-                    <Nav.Link href="#links">Links</Nav.Link>
+                    <Nav.Link href="#features">Work</Nav.Link>
                 </Nav>
-            </Navbar.Collapse>
+            </Container>
         </Navbar>
     );
 }
